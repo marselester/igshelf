@@ -19,10 +19,17 @@ $ ./igshelf
 
 It may take up to 48 hours to get a link to an Instagram account data.
 If I don't want to wait, there is an option to download the content using
-[Instagram API](https://developers.facebook.com/docs/instagram-basic-display-api/getting-started).
+[Instagram API](docs/token.md).
 
 ```sh
 $ read -p "Enter access token: " -s IGSHELF_TOKEN
 $ export IGSHELF_TOKEN
 $ ./igshelf -src=api
+```
+
+Note, if you're using zsh you might have problems with `read -p`.
+
+```zsh
+$ export IGSHELF_TOKEN
+$ vared -p "Enter access token: " IGSHELF_TOKEN
 ```
